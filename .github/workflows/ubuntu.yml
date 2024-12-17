@@ -29,10 +29,10 @@ jobs:
     
     - name: Set Git Configs & Secrets
       run: |
-        git config --global user.email ${sepamm1234@gmail.com}
-        git config --global user.name ${kidzz26}
+        git config --global user.email sepamm1234@gmail.com
+        git config --global user.name kidzz26
         git config --global credential.helper store
-        echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+        echo "https://github.com/kidzz26:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
     - uses: fastai/workflows/ssh@master
       with:
         ssh_key: ${{ secrets.SSH_KEY }}
