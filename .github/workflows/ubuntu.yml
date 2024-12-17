@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 env:
   # Change these values if you have forked it for your own works
-  GitHubMail: "gamerabous094@gmail.com"
-  GitHubName: "AndVer" 
+  GitHubMail: "sepamm1234@gmail.com"
+  GitHubName: "kidzz26" 
   Branch: "main"
 defaults:
   run:
@@ -29,8 +29,8 @@ jobs:
     
     - name: Set Git Configs & Secrets
       run: |
-        git config --global user.email ${GitHubMail}
-        git config --global user.name ${GitHubName}
+        git config --global user.email ${sepamm1234@gmail.com}
+        git config --global user.name ${kidzz26}
         git config --global credential.helper store
         echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
     - uses: fastai/workflows/ssh@master
